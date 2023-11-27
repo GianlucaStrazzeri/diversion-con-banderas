@@ -1,9 +1,6 @@
-const countriesList= document.getElementById("countries-list");
+var zonaApariciónBanderas = document.getElementById('countries-list');
 
-
-
-
-countriesList.innerHTML= "Aquí  debajo irá el listado de banderas";
+zonaApariciónBanderas .innerHTML= "Aquí  debajo irá el listado de banderas:";
 
 
 //solución gpt
@@ -19,11 +16,17 @@ countriesList.innerHTML= "Aquí  debajo irá el listado de banderas";
          // Crea un elemento de lista
          var li = document.createElement('li');
          
-         // Asigna el texto del objeto a la lista (asumo que hay una propiedad 'nombre' en el objeto)
-         li.textContent = `Nombre: ${objeto.name.common} Bandera: ${objeto.flags}` , 
+         li.innerHTML = `
+                        <p>Nombre: ${objeto.name.common}</p>
+                        <p>Población: ${objeto.population}</p>
+                        <p>Región: ${objeto.region}</p>
+                        <img src="${objeto.flags[0]}" alt="Bandera de ${objeto.name.common}" width="100">
+                    `;
+         
 
          // Agrega el elemento de lista al elemento de la lista en HTML
          zonaApariciónBanderas.appendChild(li);
+         
      });
  })
  .catch(error => console.error('Error al obtener datos:', error));

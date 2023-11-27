@@ -8,3 +8,14 @@ body {
 h1 {
   color: #333;
 }
+
+
+#container{
+  display:flex ;
+  gap:10px;
+}
+
+li{
+  list-style: none;
+  
+}
