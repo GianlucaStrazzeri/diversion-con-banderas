@@ -1,20 +1,17 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  
+  background-color: white;
+  text-align: center;
 }
 
 h1 {
   color: #333;
-}
-
-ul{
-  background-color: yellow;
+  background-color: white;
 }
 
 li{
   list-style: none;
-  background-color: green;
+  background-color: white;
   width:200px;
   padding-left: 100px;
  margin-left:20 px; 
@@ -22,6 +19,7 @@ li{
 
 #container{
   font-weight: bold;
+  background-color: blue;
 }
 
 #countries-list{
