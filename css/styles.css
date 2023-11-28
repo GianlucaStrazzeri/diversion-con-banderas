@@ -1,21 +1,30 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+  
 }
 
 h1 {
   color: #333;
 }
 
-
-#container{
-  display:flex ;
-  gap:10px;
+ul{
+  background-color: yellow;
 }
 
 li{
   list-style: none;
-  
+  background-color: green;
+  width:200px;
+  padding-left: 100px;
+ margin-left:20 px; 
+}
+
+#container{
+  font-weight: bold;
+}
+
+#countries-list{
+  display: flex;
+  flex-wrap: wrap;
 }

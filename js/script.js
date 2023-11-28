@@ -8,6 +8,8 @@ zonaApariciónBanderas .innerHTML= "Aquí  debajo irá el listado de banderas:";
  fetch('https://restcountries.com/v3/all')
  .then(response => response.json())
  .then(data => {
+//ver la estructura del array de objetos en la consola
+    console.log(data) 
      // Obtén la referencia al elemento de la lista en HTML
      var zonaApariciónBanderas = document.getElementById('countries-list');
 
@@ -32,11 +34,4 @@ zonaApariciónBanderas .innerHTML= "Aquí  debajo irá el listado de banderas:";
  .catch(error => console.error('Error al obtener datos:', error));
 
 
-//Sirve para ver la estructura del array de objetos en la consola
- fetch ("https://restcountries.com/v3/all")
-.then((response)=>{
-    return response.json()
-    .then((data)=>{
-        console.log(data) 
-    })
-});
+
