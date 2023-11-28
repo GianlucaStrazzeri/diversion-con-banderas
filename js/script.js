@@ -1,6 +1,6 @@
 var zonaApariciónBanderas = document.getElementById('countries-list');
 
-zonaApariciónBanderas .innerHTML= "Aquí  debajo irá el listado de banderas:";
+
 
 
 //solución gpt
