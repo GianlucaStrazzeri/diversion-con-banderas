@@ -26,17 +26,18 @@ var zonaApariciónBanderas = document.getElementById('countries-list');
                         <p>Nombre: ${objeto.name.common}</p>
                     `;
 
-          // Agrega elementos adicionales al contenedor
-          contenedorAdicional.innerHTML = `
-          <p> Continente: ${objeto.continents}</p>
-          <p>Capital: ${objeto.capital}</p>
-      `;
+      
 
       // Agrega el contenedor de elementos adicionales al elemento de lista
       li.appendChild(contenedorAdicional);
 
-      // Agrega el evento al pasar el ratón sobre el elemento
+      // Agrega el evento al pasar el ratón sobre el elemento y Agrega elementos adicionales al contenedor
       li.addEventListener('mouseover', function() {
+        contenedorAdicional.innerHTML = `
+        <p> Continente: ${objeto.continents}</p>
+        <p>Capital: ${objeto.capital}</p>
+    `;
+
         // Muestra el contenedor de elementos adicionales
         contenedorAdicional.style.display = 'block';
     });
