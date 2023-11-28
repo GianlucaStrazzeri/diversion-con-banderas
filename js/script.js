@@ -36,6 +36,7 @@ var zonaApariciónBanderas = document.getElementById('countries-list');
         contenedorAdicional.innerHTML = `
         <p> Continente: ${objeto.continents}</p>
         <p>Capital: ${objeto.capital}</p>
+        <button> Cerrar </button>
     `;
 
         // Muestra el contenedor de elementos adicionales
